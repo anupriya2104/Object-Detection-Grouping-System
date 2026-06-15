@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# YOLO model weights
+*.pt
+
+# Outputs
+outputs/
+
+# Uploaded images
+uploads/

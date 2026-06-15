@@ -1,0 +1,41 @@
+┌────────────────
+│       CLIENT        │
+│  Upload Shelf Image │
+└──────────┬───── 
+│
+▼
+┌─────────────────
+│   GATEWAY SERVICE   │
+│      Flask API      │
+│      Port 5000      │
+└──────────┬──────
+│
+▼
+┌─────────────────
+│ DETECTION SERVICE   │
+│      YOLOv8s        │
+│      Port 5001      │
+└──────────┬──────
+│
+▼
+┌─────────────────
+│  GROUPING SERVICE   │
+│   CLIP Embeddings   │
+│      K-Means        │
+│      Port 5002      │
+└──────────┬──────
+│
+▼
+┌─────────────────
+│VISUALIZATION SERVICE│
+│ Draw Bounding Boxes │
+│  Color-coded Groups │
+│      Port 5003      │
+└──────────┬──────
+│
+▼
+┌─────────────────
+│     FINAL OUTPUT    │
+│  JSON Response +    │
+│ Annotated Image     │
+└─────────────────

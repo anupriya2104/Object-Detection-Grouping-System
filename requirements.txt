@@ -1,0 +1,10 @@
+flask
+requests
+opencv-python
+numpy
+pillow
+ultralytics
+torch
+torchvision
+transformers
+scikit-learn
